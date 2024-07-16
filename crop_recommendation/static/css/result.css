@@ -1,0 +1,64 @@
+body {
+  background-image: url('/static/images/homebg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 50px;
+}
+.container {
+  text-align: center; /* Center align the content */
+  margin-top: 50px; /* Add some top margin for spacing */
+}
+
+table {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 20px auto;
+}
+
+th, td {
+  border: 3px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: black;
+}
+
+p {
+  text-align: center;
+  font-size: 30px;
+}
+
+.center-button {
+  margin-top: 20px; 
+}
+
+.return-button {
+  text-decoration: none;
+  margin-left: 700px;
+  background-color: black;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.return-button:hover {
+  background-color: white;
+  color: black;
+}
+
+.highlight {
+  border-radius: 5px;
+  background-color: #d4d700;
+  color: black;
+  font-weight: bold;
+  font-size: larger;
+}

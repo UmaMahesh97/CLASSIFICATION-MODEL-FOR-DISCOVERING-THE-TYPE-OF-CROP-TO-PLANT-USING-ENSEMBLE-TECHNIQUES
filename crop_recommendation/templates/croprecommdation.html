@@ -1,0 +1,80 @@
+{% extends 'homebase.html' %}
+
+{% block content %}
+
+<div class="container">
+  <form method="post" action="/predict">
+    <div class="parent">
+      <!-- First Row with 4 columns -->
+        <div class="container">
+            <div class="card p-3">
+                <!-- First Row with 4 columns -->
+<div class="row">
+  <div class="column">
+    <label for="Nitrogen_value"> NITROGEN (N) VALUE </label>
+    <input type="number" name="Nitrogen_value" id="Nitrogen_value" placeholder=" Min: 0 / Max: 150 "  min="0" max="150" step="0.1" oninput="checkRange()" required>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Nitrogen_value').value = 0 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Nitrogen_value').value = 150 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Nitrogen_value').value = 0">Clear</button>
+  </div>-
+  <div class="column">
+    <label for="Phosphorous_value"> PHOSPHOROUS (P) VALUE</label>
+    <input type="number" name="Phosphorous_value" id="Phosphorous_value" placeholder=" Min: 5 / Max: 115 " min="5" max="115" step="0.1" oninput="checkRange()" required>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Phosphorous_value').value = 5 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Phosphorous_value').value = 115 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Phosphorous_value').value = 0">Clear</button>
+  </div>
+  <div class="column">
+    <label for="Potassium_value"> POTASSIUM (K) VALUE </label>
+    <input type="number" name="Potassium_value" id="Potassium_value" placeholder=" Min: 5 / Max: 215 "  min="5" max="215" step="0.1" oninput="checkRange()" required>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Potassium_value').value = 5 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Potassium_value').value = 215 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Potassium_value').value = 0">Clear</button>
+  </div>
+  
+  <div class="column">
+    <label for="Ph_value"> PH_VAlUE </label>
+    <input type="number" name="Ph_value" id="Ph_value" placeholder=" Min: 3 / Max: 10 "  min="3" max="10" step="0.1" oninput="checkRange()" required>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Ph_value').value = 3 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Ph_value').value = 10 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Ph_value').value = 0">Clear</button>
+  </div>
+  
+<!-- Second Row with 3 columns -->
+<div class="row">
+  <div class="column">
+    <label for="Rain_fall_value">RAIN FALL VALUE </label>
+    <input type="number" name="Rain_fall_value" id="Rain_fall_value" placeholder=" Min: 20 / Max: 300 "  min="20" max="300" step="0.1" oninput="checkRange()" required><br>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Rain_fall_value').value = 20 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Rain_fall_value').value = 300 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Rain_fall_value').value = 0">Clear</button>
+  </div>
+  <div class="column">
+    <label for="Humidity_value"> HUMIDITY VALUE </label>
+    <input type="number" name="Humidity_value" id="Humidity_value" placeholder=" Min: 14 / Max: 100 "  min="14" max="100" step="0.1" oninput="checkRange()" required><br>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Humidity_value').value = 14 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Humidity_value').value = 100 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Humidity_value').value = 0">Clear</button>
+  </div>
+  <div class="column">
+    <label for="Temperature_value"> TEMPERATURE VALUE </label>
+    <input type="number" name="Temperature_value" id="Temperature_value" placeholder=" Min: 8 / Max: 45 "  min="8" max="45" step="0.1" oninput="checkRange()" required><br>
+    <button type="button" class="minbutton" id="minbutton" onclick="document.getElementById('Temperature_value').value = 8 ">Min</button>
+    <button type="button" class="maxbutton" id="maxbutton" onclick="document.getElementById('Temperature_value').value = 45 ">Max</button>
+    <button type="button" class="clearbutton" id="clearbutton" onclick="document.getElementById('Temperature_value').value = 0">Clear</button>
+  </div>
+
+</div>
+<div class="center-button">
+  <input type="submit" class="predict-button" value="Predict">
+</div>
+
+
+  </form>
+     <div>
+        <p>{{ prediction }}</p>
+
+    </div>
+{% endblock %}
+
+  

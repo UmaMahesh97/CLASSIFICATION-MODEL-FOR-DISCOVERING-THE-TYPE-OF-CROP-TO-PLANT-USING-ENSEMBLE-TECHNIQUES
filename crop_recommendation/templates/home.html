@@ -1,0 +1,111 @@
+{% extends 'homebase.html' %}
+{% block content %}
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button"  data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3" aria-label="Slide 4"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" >
+      <img src="{{ url_for('static',filename='images/slide/5.jpg') }}" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>65 % of crop cultivation is done every year</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static',filename='images/slide/8.jpg') }}" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block" style="position: absolute;top: 0; left: 0; right: 0; margin-top:30px;">
+        <h5 style="color: white; margin-top: 20px;" >58 % of indian population depend on agriculture livelihood</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static',filename='images/slide/3.jpg') }}" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block" style="position: absolute;top: 0; left: 0; right: 0; margin-top:30px;">
+        <h5 style=" margin-top: 20px">Western cyclone precipitation throughout the winter months contributes to the success of rabi crops.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static',filename='images/slide/4.jpg') }}" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block" style="position: absolute;top: 0; left: 0; right: 0; margin-top:30px;">
+        <h5 style="color: white; margin-top: 20px">Ovicides are special pesticides that destroy mite and insect eggs.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static',filename='images/slide/5.jpg') }}" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: white;">The most widely cultivated commercial crop in the world is wheat.</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static',filename='images/slide/9.jpg') }}" class="d-block w-100">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 style="color: white;">WHEAT IS COMMONLY SOWED AND HARVESTED IN A PERIOD OF ABOUT 120 DAYS.</h5>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="cards-div" style="display: flex; margin-top: 10px;" >
+  <div class="card" style="width: 18rem;margin-right:20px!important; margin-left: 10px;">
+    <img src="/static/images/card/food crop.webp" class="card-img-1" height="155px" alt="Food img">
+    <div class="card-body">
+      <p class="card-text">FOOD CROPS</p>
+      <p class="card-text">
+        Food crops are essential sources of energy to the body. Nowadays, the demand for supply of food crops is on the increase.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin-right:20px!important;">
+    <img src="/static/images/card/cash-crops.jpg" class="card-img-2" alt="Cash img">
+    <div class="card-body">
+      <p class="card-text">CASH CROPS</p>
+      <p class="card-text">Cash crops are planted for the purpose of selling on the market/export to make profit, as distinguished from subsistence crops planted for the purpose of self-supply of the Farmer.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin-right:20px!important;">
+    <img src="/static/images/card/fruits.jpg" class="card-img-3" alt="Fruit img">
+    <div class="card-body">
+      <p class="card-text">FRUIT CROPS</p>
+      <p class="card-text"> Fruit crops produce a higher yield per unit area of land than any other agronomic crop, regardless of the crop type.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin-right:20px!important;">
+    <img src="/static/images/card/Nitrogen.jpg" class="card-img-4" width="229px" height="155px" alt="Nitrogen img">
+    <div class="card-body">
+      <p class="card-text">NITROGEN</p>
+      <p class="card-text">Nitrogen is a major component of chlorophyll,by which plants use sunlight energy to produce sugars from water and carbon dioxide</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin-right:20px!important;">
+    <img src="/static/images/card/PHOSPHOROUS.jpg" class="card-img-5" alt="Phosphorus img">
+    <div class="card-body">
+      <p>PHOSPHOROUS</p>
+      <p class="card-text" > Phosphorus helps filter out waste in the kidneys and plays an essential role in how the body stores and uses energy.</p>
+    </div>
+  </div>
+  <div class="card" style="width: 18rem;margin-right:20px!important;">
+    <img src="/static/images/card/potassium.jpg" class="card-img-5" alt="potassium img">
+    <div class="card-body">
+      <p>POTASSIUM</p>
+      <p class="card-text"> Potassium plays a vital role in the translocation of sugars and starch from the leaves through to storage organs such as fruits, bulbs and tubers.</p>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
+
+  
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% extends 'homebase.html' %}
+{% block content %}
+<style>
+  body{
+    background-size:cover;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+</style>
+<div class="heading">
+  <h1>Project Description</h1>
+  <h6>Crops are one of the most important things for survival, the production of crops every year is increasing gradually, so it is essential that cultivating the best crop and high production of that crop naturally is very important for a farmer. Crop recommendation helps farmers to plan crops. Though this is done manually in general farmers ignore the one important factor that is considering soil nutrient into account. The correct balance and quantity of nutrients is important for the best crop yields and production, selecting the right crop varieties based on the nutrients level can increase the overall growth in production, This crop recommendation system can predict the most suitable crop based on the required nutrient values and favorable weather conditions that are required for the best crop.
+  </h6>
+  <br>
+  <h2>Dataset Description</h2>
+</div>
+<div class="content">
+  <h6>These days, precision agriculture is popular. It assists farmers in making well-informed decisions regarding their farming approach. Using the aforementioned dataset, users could create a predictive model that would suggest the best crops to plant on a specific farm based on a number of different factors.
+  </h6>
+  <table border="2px black">
+    <tr>
+      <th>Attribute Name</th>
+      <th>Attribute Range</th>
+      <th>Units</th>
+    </tr>
+    <tr>
+      <td>Nitrogen</td>
+      <td> Range : 0 to 140 </td>
+      <td>KiloGrams(KG)</td>
+    </tr>
+    <tr> 
+      <td>Phosphorus</td>
+      <td> Range : 5 to 145</td>
+      <td> milligrams (mg) per deciliter (dL)</td>
+    </tr>
+    <tr>
+      <td>Potassium</td>
+      <td> Range : 5 to 205 </td>
+      <td> milliequivalents per liter</td>
+    </tr>
+    <tr>
+      <td>Temperature</td>
+      <td> Range : 8 to 44</td>
+      <td>Celsius °C / Fahrenheit scale (°F)</td>
+    </tr>
+    <tr>
+      <td>Humidity</td>
+      <td> Range : 0 to 140 </td>
+      <td>GM3 (monosialodihexosylganglioside)</td>
+    </tr>
+    <tr>
+      <td>Ph_Value</td>
+      <td> Range : 3.5 to 9.9 </td>
+      <td>logarithmic units</td>
+    </tr>
+    <tr>
+      <td>Rainfall</td>
+      <td> Range : 20 to 298 </td>
+      <td>millimeters or inches</td>
+    </tr>
+  </table>
+</div>
+{% endblock %}

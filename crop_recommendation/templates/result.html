@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/result.css') }}">
+  <title>Result page</title>
+</head>
+<body>
+    <h1>PREDICTION RESULT </h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Value</th>
+        </tr>
+        <tr>
+            <td>Nitrogen</td>
+            <td>{{ user_input[0] }}</td>
+        </tr>
+        <tr>
+            <td>Phosphorus</td>
+            <td>{{ user_input[1] }}</td>
+        </tr>
+        <tr>
+            <td>Potassium</td>
+            <td>{{ user_input[2] }}</td>
+        </tr>
+        <tr>
+            <td>Temperature</td>
+            <td>{{ user_input[3] }}</td>
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td>{{ user_input[4] }}</td>
+        </tr>
+        <tr>
+            <td>Ph Value</td>
+            <td>{{ user_input[5] }}</td>
+        </tr>
+        <tr>
+            <td>Rainfall</td>
+            <td>{{ user_input[6] }}</td>
+        </tr>
+    </table>
+    <div>
+    <p><span class="highlight">{{ prediction }}
+        <img src="{{ url_for('static', filename=result_img.get(prediction, 'default.png')) }}" width="30px" height="30px" alt="Image">
+    </span></p>
+    </div>
+    <div class="class-center">
+        <a href="/croprecommdation" class="return-button">BACK</a>
+    </div>
+  
+</body>
+</html>

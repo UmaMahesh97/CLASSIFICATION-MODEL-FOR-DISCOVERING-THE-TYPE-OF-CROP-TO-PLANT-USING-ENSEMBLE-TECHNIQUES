@@ -1,0 +1,22 @@
+body {
+  background-image:url('/static/images/back.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.mt-50{
+  margin-top: 150px;
+
+}
+
+.mt-40{
+  margin-top: 100px;
+}
+
+
